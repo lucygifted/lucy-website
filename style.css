@@ -101,6 +101,14 @@ a:hover {
   color: var(--white);
 }
 
+.button-primary:hover {
+  color: var(--plum-text);
+}
+
+.button-secondary:hover {
+  color: var(--white);
+}
+
 .hero-photo {
   width: 320px;
   height: 400px;
