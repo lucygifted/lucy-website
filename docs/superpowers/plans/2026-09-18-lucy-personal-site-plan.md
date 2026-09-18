@@ -613,23 +613,27 @@ git commit -m "Add favicon, meta description, and Open Graph tags"
 No file changes expected — this task is a check. If it finds a problem,
 fix it in `index.html` before committing.
 
-- [ ] **Step 1: List every href and confirm none is a bare placeholder**
+- [ ] **Step 1: List every user-facing `<a href>` link and confirm none is a bare placeholder**
+
+Scope this to `<a>` tags only — by this point (Task 5 already ran)
+`<head>` also has `<link href>` tags for the stylesheet, favicon, and
+Google Fonts, which are not user-facing links and aren't part of this
+audit.
 
 Run:
 ```bash
-grep -oE 'href="[^"]*"' index.html
+grep -oE '<a href="[^"]*"' index.html
 ```
-Expected output — exactly these five, nothing else:
+Expected output — exactly these four, nothing else:
 ```
-href="style.css"
-href="#work"
-href="#highlights"
-href="https://giftedcoaching.info"
-href="mailto:lucy@giftedcoaching.info"
+<a href="#work"
+<a href="#highlights"
+<a href="https://giftedcoaching.info"
+<a href="mailto:lucy@giftedcoaching.info"
 ```
-If any line is `href="#"` with no fragment, or points somewhere not on
-this list without a reason, fix it — that's the dead-link smell the spec
-explicitly ruled out.
+If any line is `<a href="#"` with no fragment, or points somewhere not
+on this list without a reason, fix it — that's the dead-link smell the
+spec explicitly ruled out.
 
 - [ ] **Step 2: Confirm the two in-page anchors resolve to real ids**
 
