@@ -203,3 +203,46 @@ a:hover {
   color: var(--footer-text);
   border-top: 1px solid var(--border);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 64px 24px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .mission {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-photo {
+    width: 220px;
+    height: 270px;
+  }
+
+  .section {
+    padding: 48px 20px;
+  }
+
+  .content h2 {
+    font-size: 26px;
+  }
+}
