@@ -98,7 +98,7 @@ lucy-website/
                     enough)
   assets/
     lucy.jpg
-    favicon.ico
+    favicon.png
   docs/superpowers/specs/   (this file)
 ```
 
