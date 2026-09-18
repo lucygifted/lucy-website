@@ -6,13 +6,15 @@
   --white: #FFFFFF;
   --border: #E3D5E8;
   --text-secondary: #4A3A4C;
-  --footer-text: #9A8998;
+  --footer-text: #7A6A78;
 }
 
 * { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -22,7 +24,7 @@ body {
   color: var(--plum-text);
 }
 
-h1, h2 {
+h1, h2, .service-card h3 {
   font-family: 'Fraunces', Georgia, serif;
   margin: 0;
 }
@@ -32,8 +34,13 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--lavender);
+.text-link:hover,
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  opacity: 0.88;
 }
 
 .hero {
@@ -101,14 +108,6 @@ a:hover {
   color: var(--white);
 }
 
-.button-primary:hover {
-  color: var(--plum-text);
-}
-
-.button-secondary:hover {
-  color: var(--white);
-}
-
 .hero-photo {
   width: 320px;
   height: 400px;
@@ -164,8 +163,6 @@ a:hover {
 }
 
 .service-card h3 {
-  margin: 0;
-  font-family: 'Fraunces', Georgia, serif;
   font-size: 20px;
   color: var(--plum);
 }
