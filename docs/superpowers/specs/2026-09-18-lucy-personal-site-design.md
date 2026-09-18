@@ -31,12 +31,19 @@ ship the smallest complete version — not every idea in this doc.
 3. 2025 Gracie Award honoree, audiobook narration
 4. Founder, Gifted Coaching & Gifted Books
 
-**What I Do**
-> Through Gifted Coaching, Lucy offers one-on-one coaching, keynote
-> speaking, and communication training in English and Mandarin — for
-> women, immigrants, and professionals building their next chapter.
+**What I Do** (three service cards, not one paragraph — pattern taken
+from benchmarking against Cortney McDermott's site, a speaker/author/
+coach of similar scale: scannable service cards beat a single block of
+text)
 
-CTA: "Visit Gifted Coaching →" → `https://giftedcoaching.info`
+1. **1:1 Coaching** — Personalized career and life coaching in English
+   and Mandarin, for women and immigrants building their next chapter.
+2. **Keynote Speaking** — Talks on resilience and leadership, delivered
+   everywhere from corporate stages to SXSW.
+3. **Communication Training** — Practical coaching to help you lead and
+   speak with confidence.
+
+CTA below the cards: "Visit Gifted Coaching →" → `https://giftedcoaching.info`
 
 **Contact**
 - `lucy@giftedcoaching.info` (mailto link) — the only contact method in
@@ -81,6 +88,12 @@ but v1 ships without them — add only after the simple version is live:
 - Real LinkedIn/Instagram links in Contact
 - Cloudflare Web Analytics (free, privacy-friendly, one script tag —
   cheap to add once the page is live)
+- Rewriting Highlights as a named client testimonial instead of a bare
+  achievement list (benchmarked from Cortney McDermott's site — needs
+  Lucy to confirm which quote to reuse)
+- A low-barrier free lead magnet (book excerpt, checklist) replacing
+  "Read the Book" as a softer first CTA (same benchmark — needs Lucy to
+  supply the asset; nothing to link to yet)
 
 v1 still includes, because these are near-zero cost and the page is
 incomplete without them: `<title>`, meta description, favicon, and
